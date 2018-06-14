@@ -10,8 +10,11 @@ class PaymasterServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        // Публикуем конфиг
         $this->publishes([
             __DIR__.'/config/paymaster.php' => config_path('paymaster.php'),
         ]);
+        // Загружаем пути
+        $this->loadRoutesFrom(__DIR__.'/routes.php');
     }
 }
