@@ -1,0 +1,20 @@
+{
+    "name": "alexsaab/paymaster-laravel",
+    "description": "Paymaster payment method for laravel 5 framework",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Alexey Agafonov",
+            "email": "awa77@mail.ru"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Alexsaab\\Modules\\": ""
+        }
+    }
+
+}
