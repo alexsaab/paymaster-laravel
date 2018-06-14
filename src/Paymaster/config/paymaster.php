@@ -20,7 +20,7 @@ return [
     // 0 или отсутствует: Для всех тестовых платежей сервис будет имитировать успешное выполнение;
     // 1: Для всех тестовых платежей сервис будет имитировать выполнение с ошибкой (платеж не выполнен);
     // 2: Около 80% запросов на платеж будут выполнены успешно, а 20% - не выполнены.
-    'LMI_SIM_MODE' => env('LMI_SIM_MODE',''),
+    'LMI_SIM_MODE' => env('LMI_SIM_MODE',0),
 
     // Замена Invoice Confirmation URL
     // Если присутствует, то запрос Invoice Confirmation будет отправляться по указанному URL
@@ -63,6 +63,12 @@ return [
 
     // Берем этот блок и размещаем его в .env файле подставив нужные переменные
     // LMI_MERCHANT_ID=
-    // LMI_CURRENCY=
-
+    // LMI_CURRENCY=RUB
+    // LMI_SIM_MODE=0
+    // LMI_INVOICE_CONFIRMATION_URL=
+    // LMI_PAYMENT_NOTIFICATION_URL=
+    // LMI_SUCCESS_URL=
+    // LMI_FAILURE_URL=
+    // LMI_PAYMENT_METHOD=
+    // KEYPASS=
 ];
