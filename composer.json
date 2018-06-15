@@ -3,14 +3,13 @@
     "description": "Paymaster payment method for laravel 5 framework",
     "keywords": ["ecommerce","payment","paymaster","laravel","webmoney"],
     "license": "MIT",
-    "version": "1.0.2",
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Alexey Agafonov",
             "email": "awa77@mail.ru"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
         "illuminate/support": "~5.0"
