@@ -12,8 +12,7 @@
     "minimum-stability": "dev",
 
     "require": {
-        "php": ">=5.4.0",
-        "cartalyst/support": "~1.0|~2.0",
+        "php": ">=5.5.9",
         "illuminate/support": "~5.0"
     },
     "require-dev": {
@@ -22,9 +21,7 @@
         "illuminate/events": "~5.0",
         "illuminate/http": "~5.0",
         "illuminate/session": "~5.0",
-        "ircmaxell/password-compat": "~1.0",
         "mockery/mockery": "~0.9",
-        "paragonie/random_compat": "^1.4|^2",
         "phpunit/phpunit": "~4.0"
     },
     "autoload": {
