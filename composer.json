@@ -9,7 +9,7 @@
             "email": "awa77@mail.ru"
         }
     ],
-    "minimum-stability": "1.0.0",
+    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "psr-4": {
