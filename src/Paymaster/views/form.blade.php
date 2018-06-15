@@ -1,4 +1,11 @@
-<form method="post" action="{{ $method->url }}">
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Paymaster оплата</title>
+</head>
+<body>
+<form method="post" action="{{ $method->url }}" name="paymentForm">
     <input type="hidden" name="LMI_MERCHANT_ID" value="{{ $method->LMI_MERCHANT_ID }}"/>
     <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="{{ $method->LMI_PAYMENT_AMOUNT }}"/>
     <input type="hidden" name="LMI_CURRENCY" value="{{ $method->LMI_CURRENCY }}"/>
@@ -53,3 +60,10 @@
     @endif
     <input type="submit" value="Оплатить"/>
 </form>
+<script>
+    window.onload = function(){
+        document.forms['paymentForm'].submit();
+    }
+</script>
+</body>
+</html>
