@@ -1,7 +1,7 @@
 {
     "name": "alexsaab/paymaster-laravel",
     "description": "Paymaster payment method for laravel 5 framework",
-    "keywords": ["ecommerce","payment","paymaster","laravel"],
+    "keywords": ["ecommerce","payment","paymaster","laravel","webmoney"],
     "license": "MIT",
     "version": "1.0.2",
     "authors": [
