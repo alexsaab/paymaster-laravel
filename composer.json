@@ -32,6 +32,9 @@
       "Alexsaab\\Paymaster\\": "src/"
     }
   },
+  "config": {
+    "sort-packages": true
+  },
   "extra": {
     "laravel": {
       "providers": [
