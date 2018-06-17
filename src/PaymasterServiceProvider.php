@@ -16,13 +16,13 @@ class PaymasterServiceProvider extends ServiceProvider
     {
         // Публикуем конфиг
         $this->publishes([
-            __DIR__.'/config/paymaster.php' => config_path('paymaster.php'),
+            __DIR__.'/Config/paymaster.php' => config_path('paymaster.php'),
         ]);
 
         // Загружаем пути
         $this->loadRoutesFrom(__DIR__.'/routes.php');
 
         // Загружаем виды
-        $this->loadViewsFrom(__DIR__.'/views', 'paymaster');
+        $this->loadViewsFrom(__DIR__.'/Views', 'paymaster');
     }
 }
