@@ -1,7 +1,9 @@
 <?php
-declare(strict_types=1);
+
+namespace Alexsaab\Paymaster;
 
 use Illuminate\Support\ServiceProvider;
+
 
 class PaymasterServiceProvider extends ServiceProvider
 {
