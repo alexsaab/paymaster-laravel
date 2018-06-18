@@ -17,7 +17,13 @@ class PaymasterServiceProvider extends ServiceProvider
         // Публикуем конфиг
         $this->publishes([
             __DIR__ . '/../config/paymaster.php' => config_path('paymaster.php'),
-        ]);
+        ], 'config');
+
+        // Теперь все делаем таблица под транзакции
+        $this->publishes([
+            __DIR__ . '/../database/migrations/' => database_path('migrations')
+        ], 'migrations');
+
 
         // Загружаем пути
         $this->loadRoutesFrom(__DIR__.'/routes.php');
@@ -25,10 +31,6 @@ class PaymasterServiceProvider extends ServiceProvider
         // Загружаем виды
         $this->loadViewsFrom(__DIR__.'/Views', 'paymaster');
 
-        // Теперь все делаем таблица под транзакции
-        $this->publishes([
-            __DIR__ . '/../database/migrations/' => database_path('migrations')
-        ], 'migrations');
 
     }
 }

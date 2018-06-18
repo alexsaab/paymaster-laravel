@@ -44,7 +44,7 @@
   },
   "scripts": {
     "post-package-install": [
-      "php artisan vendor:publish --provider=PaymasterServiceProvider --force",
+      "php artisan vendor:publish  --provider=Alexsaab\\Paymaster\\PaymasterServiceProvider --tag=migrations,config --force",
       "php artisan migrate"
     ]
   }
