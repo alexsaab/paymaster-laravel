@@ -41,5 +41,11 @@
         "Alexsaab\\Paymaster\\PaymasterServiceProvider"
       ]
     }
+  },
+  "scripts": {
+    "post-package-install": [
+      "php artisan vendor:publish --provider=PaymasterServiceProvider --force",
+      "php artisan migrate"
+    ]
   }
 }
