@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 
 if ((config('paymaster.LMI_MERCAHNT_ID')) && config('paymaster.LMI_PAYMENT_FORM_URL','/cart/checkout/payment/paymaster')) {
     Route::get(config('paymaster.LMI_PAYMENT_FORM_URL','/cart/checkout/payment/paymaster'), array(
