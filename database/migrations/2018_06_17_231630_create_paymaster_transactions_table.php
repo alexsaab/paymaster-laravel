@@ -45,6 +45,7 @@ class CreatePaymasterTransactionsTable extends Migration
                 $table->string('lmi_payer_country', 5)->nullable(true)->index();
                 $table->string('lmi_payer_passport_country', 5)->nullable(true)->index();
                 $table->string('lmi_payer_ip_address')->nullable(true)->index();
+                $table->text('info')->nullable(true);
                 $table->timestamps();
             });
         }
