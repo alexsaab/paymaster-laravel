@@ -25,5 +25,10 @@ class PaymasterServiceProvider extends ServiceProvider
         // Загружаем виды
         $this->loadViewsFrom(__DIR__.'/Views', 'paymaster');
 
+        // Теперь все делаем таблица под транзакции
+        $this->publishes([
+            __DIR__ . '/../database/migrations/' => database_path('migrations')
+        ], 'migrations');
+
     }
 }
