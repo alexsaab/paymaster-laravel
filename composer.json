@@ -43,8 +43,20 @@
     }
   },
   "scripts": {
+    "pre-update-cmd": [
+    ],
+    "post-update-cmd": [
+      "php artisan clear-compiled",
+      "php artisan optimize"
+    ],
     "post-package-install": [
-      "php artisan vendor:publish  --provider=Alexsaab\\Paymaster\\PaymasterServiceProvider --tag=migrations,config --force",
+      "php artisan vendor:publish --provider=\"Alexsaab\\Paymaster\\PaymasterServiceProvider\" --tag=migrations --force",
+      "php artisan vendor:publish --provider=\"Alexsaab\\Paymaster\\PaymasterServiceProvider\" --tag=config --force",
+      "php artisan migrate"
+    ],
+    "post-package-update": [
+      "php artisan vendor:publish --provider=\"Alexsaab\\Paymaster\\PaymasterServiceProvider\" --tag=migrations --force",
+      "php artisan vendor:publish --provider=\"Alexsaab\\Paymaster\\PaymasterServiceProvider\" --tag=config --force",
       "php artisan migrate"
     ]
   }
