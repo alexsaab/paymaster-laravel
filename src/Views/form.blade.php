@@ -9,7 +9,7 @@
     <input type="hidden" name="LMI_MERCHANT_ID" value="{{ $method->LMI_MERCHANT_ID }}"/>
     <input type="hidden" name="LMI_PAYMENT_AMOUNT" value="{{ $method->LMI_PAYMENT_AMOUNT }}"/>
     <input type="hidden" name="LMI_CURRENCY" value="{{ $method->LMI_CURRENCY }}"/>
-    <input type="hidden" name="LMI_CURRENCY" value="{{ $method->LMI_PAYMENT_DESC }}"/>
+    <input type="hidden" name="LMI_PAYMENT_DESC" value="{{ $method->LMI_PAYMENT_DESC }}"/>
     @if (isset($method->LMI_PAYMENT_NO))
         <input type="hidden" name="LMI_PAYMENT_NO" value="{{ $method->LMI_PAYMENT_NO }}"/>
     @endif
@@ -42,9 +42,6 @@
     @endif
     @if (isset($method->LMI_SHOP_ID))
         <input type="hidden" name="LMI_SHOP_ID" value="{{ $method->LMI_SHOP_ID }}"/>
-    @endif
-    @if (isset($method->LMI_PAYMENT_METHOD))
-        <input type="hidden" name="LMI_PAYMENT_METHOD" value="{{ $method->LMI_PAYMENT_METHOD }}"/>
     @endif
     @if (isset($method->SIGN))
         <input type="hidden" name="SIGN" value="{{ $method->SIGN }}"/>
